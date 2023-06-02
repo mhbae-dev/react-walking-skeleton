@@ -9,7 +9,7 @@ describe("App",() => {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
 
-    await page.goto('http://localhost:3000')
+    await page.goto("https://mhbae-dev.github.io/react-walking-skeleton")
     await page.waitForSelector('button')
     await page.click('button')
     const document = await page.evaluate(() => document.body.textContent);
